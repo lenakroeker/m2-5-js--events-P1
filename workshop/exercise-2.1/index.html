@@ -1,11 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Exercise 2.1</title>
-    <style></style>
-  </head>
-  <body>
-    <div class="main" id="main"></div>
-    <script src="app.js"></script>
-  </body>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+<head>
+  <title>Exercise 2.1</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .button {
+      height: 150px;
+      width: 150px;
+      background: rgb(255, 95, 108);
+      color: brown;
+      border-radius: 40px;
+      margin: 10px;
+      font-size: 90px;
+      text-align: center;
+    }
+
+    p {
+      margin: 0;
+      border-radius: 40px;
+      line-height: 1.5em;
+      padding-top: -120px;
+      height: 150px;
+      font-family: 'Bungee Shade', cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main" id="main"></div>
+  <script src="app.js"></script>
+</body>
+
 </html>

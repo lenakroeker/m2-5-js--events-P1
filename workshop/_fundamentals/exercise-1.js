@@ -5,6 +5,9 @@
 
 const letterCount = (arr) => {
   // Insert missing solution please
+  let total = 0;
+  arr.forEach(word => total += word.length);
+  return total;
 };
 
 // 2. Do a console.log to verify your function.

@@ -7,6 +7,17 @@
 
 const getValues = (arr, key) => {
   // Insert missing solution please
+  let finalArr = [];
+  arr.forEach(obj => {
+    if (obj.hasOwnProperty(key)) {
+      finalArr.push(obj[key]);
+    }
+  });
+  if (finalArr.length === 0) {
+    return null;
+  } else {
+    return finalArr;
+  }
 };
 
 // 2. Do a console.log to verify your function.

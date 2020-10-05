@@ -1,11 +1,105 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Exercise 2.4</title>
-    <style></style>
-  </head>
-  <body>
-    <div class="main" id="main"></div>
-    <script src="app.js"></script>
-  </body>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+<head>
+  <title>Exercise 2.4</title>
+  <style>
+    * {
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .main {
+      width: 100vw;
+      height: 100vh;
+      background: rgb(229, 233, 225);
+      text-align: center;
+      font-family: 'Bungee Inline', cursive;
+    }
+
+    #startbtn {
+      width: 400px;
+      height: 150px;
+      background-color: rgb(255, 77, 112);
+      color: ivory;
+      font-size: 100px;
+      border: none;
+      border-radius: 20px;
+      margin-top: 100px;
+    }
+
+    #startbtn:active {
+      box-shadow: inset 1px -1px 14px 1px rgba(143, 0, 7, 1);
+    }
+
+    .btn {
+      width: 70px;
+      height: 70px;
+      border-radius: 40px;
+      background-color: transparent;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+      line-height: 1.7em;
+    }
+
+    .red {
+      background: rgb(255, 0, 234);
+      color: rgb(255, 199, 236);
+    }
+
+    .green {
+      background: rgb(0, 255, 170);
+      color: rgb(0, 124, 103);
+    }
+
+    .win {
+      position: relative;
+      margin: auto;
+      padding-top: 200px;
+      background-color: transparent;
+      color: rgb(255, 77, 112);
+      font-size: 100px;
+      z-index: 2;
+    }
+
+    .lose {
+      position: relative;
+      margin: auto;
+      padding-top: 200px;
+      background-color: transparent;
+      color: rgb(59, 255, 245);
+      font-size: 100px;
+      z-index: 2;
+    }
+
+    #countdown {
+      position: fixed;
+      left: 36vw;
+      line-height: 1em;
+      margin: 0;
+      padding: 0;
+      font-size: 500px;
+      background: transparent;
+      color: rgba(255, 255, 255, 0.438);
+      font-family: 'Bungee Shade', cursive;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main" id="main">
+    <p id="countdown"></p>
+    <button id="startbtn">START!</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
 </html>

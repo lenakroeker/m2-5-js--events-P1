@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Exercise 3.2</title>
-    <style></style>
-  </head>
-  <body>
-    <div class="main" id="main"></div>
-    <script src="app.js"></script>
-  </body>
+
+<head>
+  <title>Exercise 3.2</title>
+  <style>
+    body {
+      color: rgb(75, 77, 105);
+      font-size: 100px;
+      text-align: center;
+    }
+
+    button {
+      align-self: center;
+      background: rgb(255, 105, 105);
+      border: none;
+      border-radius: 30px;
+      color: rgb(255, 224, 224);
+      font-size: 50px;
+      padding: 20px;
+      outline: none;
+      cursor: pointer;
+    }
+
+    button:active {
+      box-shadow: inset 4px 4px 28px -11px rgba(0, 0, 0, 0.45);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="main" id="main">
+    <button id="stop">stop</button>
+    <button id="start">start</button>
+    <button id="reset">reset</button>
+  </div>
+  <p id="display">00:00</p>
+  <script src="app.js"></script>
+</body>
+
 </html>
